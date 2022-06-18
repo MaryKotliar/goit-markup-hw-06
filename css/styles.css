@@ -926,8 +926,11 @@ margin-left: 30px;
             line-height: 1.71;
             letter-spacing: 0.03em;
             color: #757575;
-            position: relative;
-            margin-left: 9px;
+            
+            
+            
+            
+        
             /* display: flex;
             align-items: center; */
             
@@ -937,10 +940,10 @@ margin-left: 30px;
             text-decoration:underline;
 
         }
-        .check-text + span {
+        .check-text span {
             position:absolute;
-            top:0px;
-            left:0px;
+            top:50%;
+            left:14px;
             width: 16px;
             height: 15px;
             border: 2px solid #090b13;
@@ -948,6 +951,11 @@ margin-left: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
+            background-color: #FFFFFF;
+            transform: translateY(-50%);
+            
+            
+            
         }
             
             
@@ -955,4 +963,12 @@ margin-left: 30px;
         .form-checkbox {
             position:relative;
             margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .modal-check:checked + .check-text span {
+            background-color: var(--accent-colour);
+            border: none;
+
         }
