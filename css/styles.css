@@ -218,7 +218,7 @@ img {
 
 /*------------------------ADVANTAGES-------------------------------*/
 .visually-hidden {
-    position: absolute;
+    /* position: absolute; */
     white-space: nowrap;
     width: 1px;
     height: 1px;
@@ -926,6 +926,10 @@ margin-left: 30px;
             line-height: 1.71;
             letter-spacing: 0.03em;
             color: #757575;
+            position: relative;
+            margin-left: 9px;
+            /* display: flex;
+            align-items: center; */
             
         }
         .check-link {
@@ -944,9 +948,10 @@ margin-left: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
+        }
             
             
-}
+
         .form-checkbox {
             position:relative;
             margin-top: 20px;
