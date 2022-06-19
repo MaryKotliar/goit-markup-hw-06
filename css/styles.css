@@ -837,7 +837,9 @@ margin-left: 30px;
             transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
             
         } 
-
+        /* .no-scroll {
+            overflow: hidden;
+        } */
         .close-btn {
             position: absolute;
             display: flex;
@@ -852,9 +854,12 @@ margin-left: 30px;
             right: 8px;
             cursor: pointer;
             padding: 0px;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
             
             
-            
+        }
+        .close-btn:hover, .close-btn:focus {
+            fill: var(--accent-colour);
         }
         .modal-text {
             font-weight: 700;
@@ -889,7 +894,8 @@ margin-left: 30px;
             border: 1px solid rgba(33, 33, 33, 0.2);
             border-radius: 4px;
             margin-top: 4px;
-            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); ;
+            cursor: pointer;
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
         }
 
         .online-label {
@@ -943,13 +949,7 @@ margin-left: 30px;
             letter-spacing: 0.03em;
             color: #757575;
             
-            
-            
-            
-        
-            /* display: flex;
-            align-items: center; */
-            
+                    
         }
         .check-link {
             color:var(--accent-colour);
@@ -973,7 +973,6 @@ margin-left: 30px;
         }
             
             
-
         .form-checkbox {
             position:relative;
             margin-top: 20px;
@@ -983,7 +982,8 @@ margin-left: 30px;
 
         .modal-check:checked + .check-text span {
             background-color: var(--accent-colour);
-            border: none;
+            border-color: transparent;
+            
         }
         
         .modal-check:focus  + .check-text span {
